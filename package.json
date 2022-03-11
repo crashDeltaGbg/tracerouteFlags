@@ -1,0 +1,10 @@
+{
+  "name": "traceroute-flags",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "traceroute": "^1.0.0"
+  }
+}
