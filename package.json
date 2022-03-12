@@ -1,10 +1,14 @@
 {
-  "name": "traceroute-flags",
-  "version": "1.0.0",
+  "name": "tracerouteflags",
+  "version": "0.1.0",
+  "description": "traceroute, but with country flags",
   "main": "index.js",
-  "license": "MIT",
+  "license": "ISC",
+  "author": "maxarvid",
   "type": "module",
-  "bin": "index.js",
+  "bin": {
+    "tracerouteFlags": "index.js"
+  },
   "dependencies": {
     "axios": "^0.26.1",
     "commander": "^9.0.0",
