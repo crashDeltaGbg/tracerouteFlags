@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
 import axios from "axios";
+import { Command } from "commander";
 import Traceroute from "traceroute-lite";
 import emoji from "./emoji.js";
 
-let tr = new Traceroute("googe.com");
+const program = new Command();
 
 const fetchCountryCode = async (ip) => {
   const response = await axios.get(
@@ -13,11 +14,18 @@ const fetchCountryCode = async (ip) => {
   return response.data["countryCode"];
 };
 
-tr.on("hop", async (hop) => {
-  const countryCode = await fetchCountryCode(hop.ip);
+program.argument("<uri>").action((uri) => {
+  console.log(uri);
+  let tr = new Traceroute(uri);
 
-  hop["country"] = emoji[`flag-${countryCode?.toLowerCase()}`];
-  console.log(hop);
+  tr.on("hop", async (hop) => {
+    const countryCode = await fetchCountryCode(hop.ip);
+
+    hop["country"] = emoji[`flag-${countryCode?.toLowerCase()}`];
+    console.log(hop);
+  });
+
+  tr.start();
 });
 
-tr.start();
+program.parse();

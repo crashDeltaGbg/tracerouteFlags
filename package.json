@@ -6,6 +6,7 @@
   "type": "module",
   "dependencies": {
     "axios": "^0.26.1",
+    "commander": "^9.0.0",
     "traceroute-lite": "^0.1.0"
   }
 }
