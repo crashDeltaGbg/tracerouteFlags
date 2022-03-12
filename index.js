@@ -14,17 +14,22 @@ const fetchCountryCode = async (ip) => {
   return response.data["countryCode"];
 };
 
-program.argument("<uri>").action((uri) => {
-  let tr = new Traceroute(uri);
+const fetchEmojiFlag = (countryCode) => {
+  return emoji[`flag-${countryCode?.toLowerCase()}`];
+};
 
+const runTraceroute = (uri) => {
+  let tr = new Traceroute(uri);
   tr.on("hop", async (hop) => {
     const countryCode = await fetchCountryCode(hop.ip);
-
-    hop["country"] = emoji[`flag-${countryCode?.toLowerCase()}`];
+    hop["country"] = fetchEmojiFlag(countryCode);
     console.log(hop);
   });
-
   tr.start();
+};
+
+program.argument("<uri>").action((uri) => {
+  runTraceroute(uri);
 });
 
 program.parse();
