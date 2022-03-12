@@ -5,6 +5,6 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "traceroute": "^1.0.0"
+    "traceroute-lite": "^0.1.0"
   }
 }

@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-traceroute@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/traceroute/-/traceroute-1.0.0.tgz#4b08996e2a84ee5c5cd6e0eab15f97cd7a56a3db"
-  integrity sha1-SwiZbiqE7lxc1uDqsV+XzXpWo9s=
+traceroute-lite@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/traceroute-lite/-/traceroute-lite-0.1.0.tgz#484b3a160ab86560493ddc1856f7ead5e0b2648d"
+  integrity sha1-SEs6Fgq4ZWBJPdwYVvfq1eCyZI0=
