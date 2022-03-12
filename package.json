@@ -5,6 +5,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "axios": "^0.26.1",
     "traceroute-lite": "^0.1.0"
   }
 }
