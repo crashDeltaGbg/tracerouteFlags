@@ -15,7 +15,6 @@ const fetchCountryCode = async (ip) => {
 };
 
 program.argument("<uri>").action((uri) => {
-  console.log(uri);
   let tr = new Traceroute(uri);
 
   tr.on("hop", async (hop) => {

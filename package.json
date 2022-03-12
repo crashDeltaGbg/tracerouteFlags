@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "type": "module",
+  "bin": "index.js",
   "dependencies": {
     "axios": "^0.26.1",
     "commander": "^9.0.0",
