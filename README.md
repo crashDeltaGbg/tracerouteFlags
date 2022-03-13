@@ -9,7 +9,7 @@ npm install tracerouteFlags -g
 
 ## Usage
 
-just run `traceRoute <URI>` in your terminal.
+just run `tracerouteFlags <URI>` in your terminal.
 
 ## Dependencies
 Would it even be a node project without any packages?
