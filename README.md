@@ -2,7 +2,6 @@
 
 Like `traceroute` but with country flags.
 
-NB: Not deployed on npmjs yet.
 ```
 npm install tracerouteFlags -g
 ```
