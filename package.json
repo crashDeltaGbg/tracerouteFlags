@@ -9,6 +9,14 @@
   "bin": {
     "tracerouteFlags": "index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxarvid/tracerouteFlags.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxarvid/tracerouteFlags/issues"
+  },
+  "homepage": "https://github.com/maxarvid/tracerouteFlags#readme",
   "dependencies": {
     "axios": "^0.26.1",
     "commander": "^9.0.0",
